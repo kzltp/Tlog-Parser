@@ -4,13 +4,17 @@
 
 It is very simple. Just run and choose rec id
 
-![Alt Text](https://media.giphy.com/media/zDuqef1ijgtpZE0Ijs/giphy.gif)
+
+
+
+https://user-images.githubusercontent.com/5288152/140038017-fa8b08d7-d142-43ad-ad5a-581cc27878aa.mp4
+
+
 
 ### Parameters
-**standard** 
-  Session play standard speed
-**quicly** 
-  Session play quicly (Default)
+**standard** : Session play standard speed
+  <br />
+**quicly** : Session play quicly (Default)
 
 
 ## How to Create Centralized Tlog 
