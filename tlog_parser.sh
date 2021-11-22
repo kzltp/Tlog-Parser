@@ -22,7 +22,7 @@ for i in $( awk -F'"' '{ print $12 }' $tlogpath | uniq); do
     order=$(($order + 1))
 done
 read -ep "Please Write Rec-ID: " REC
-grep -i $REC $tlogpath | sed  's/^.*({)/\"1"/' | cut -d " " -f 7- > /tmp/tlog-play.log
+grep -i $REC $tlogpath | sed  's/^.*({)/\"1"/' | sed 's/^.*ver/{"ver/' > /tmp/tlog-play.log
 echo -e "########## $REC Playing ##########\n"
 epocht=$(grep -i -m 1 $REC $tlogpath | awk -F'"' '{ print $29 }' | sed 's/://;s/,//')
 if [ "$CMD" == "standard" ]; then
